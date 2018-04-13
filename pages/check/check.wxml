@@ -1,6 +1,6 @@
 <view class="page">
     <view class="page__bd">
-        <view class="weui-panel weui-panel_access">
+        <view wx:if="{{!auth}}" class="weui-panel weui-panel_access">
             <view class="weui-panel__hd">商家登录</view>
             <view class="weui-panel__bd">
               <view class="weui-cells weui-cells_after-title">
@@ -9,13 +9,13 @@
                         <view class="weui-label">登录码</view>
                     </view>
                     <view class="weui-cell__bd">
-                        <input class="weui-input" placeholder="请输入登录码"/>
+                        <input class="weui-input" bindinput="onVerifyCodeInput" placeholder="请输入登录码" type="number" confirm-type="go" maxlength="6" adjust-position="true"/>
                     </view>
                 </view>
               </view>
             </view>
         </view>
-        <view class="weui-grids">
+        <view wx:if="{{auth}}" class="weui-grids">
                 <navigator url="javascript;" class="weui-grid" hover-class="weui-grid_active">
                     <image class="weui-grid__icon" src="../../images/scan.png" />
                     <view class="weui-grid__label">扫码</view>

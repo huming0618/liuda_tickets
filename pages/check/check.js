@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    auth: false
+  },
+
+  onVerifyCodeInput: function(e){
+    const input = e.detail.value;
+    if (input.length === 6){
+      this.setData({auth:true})
+    }
   },
 
   /**
