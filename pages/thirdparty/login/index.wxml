@@ -17,11 +17,11 @@
         </view>
         <view wx:if="{{auth}}" class="weui-grids">
                 <navigator url="javascript;" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="../../images/scan.png" />
+                    <image class="weui-grid__icon" src="../../../images/scan.png" />
                     <view class="weui-grid__label">扫码</view>
                 </navigator>
                 <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="../../images/nav-btn.png" />
+                    <image class="weui-grid__icon" src="../../../images/nav-btn.png" />
                     <view class="weui-grid__label">历史记录</view>
                 </navigator>
         </view>

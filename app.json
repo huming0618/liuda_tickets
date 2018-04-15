@@ -1,37 +1,13 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/user/user",
-    "pages/check/check",
-    "pages/event/event"
+    "pages/thirdparty/order/index",
+    "pages/thirdparty/login/index"
+ 
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "去溜达溜达",
     "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "selectedColor": "#1296db",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "活动",
-        "iconPath": "images/nav-btn.png",
-        "selectedIconPath": "images/nav-btn.png"
-      },
-      {
-        "pagePath": "pages/check/check",
-        "text": "商家",
-        "iconPath": "images/nav-btn.png",
-        "selectedIconPath": "images/nav-btn.png"
-      },
-      {
-        "pagePath": "pages/user/user",
-        "text": "我的",
-        "iconPath": "images/nav-btn.png",
-        "selectedIconPath": "images/nav-btn.png"
-      }
-    ]
   }
 }
