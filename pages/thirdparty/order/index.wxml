@@ -1,17 +1,44 @@
 <view class="page">
     <view class="page__bd">
         <view class="weui-panel weui-panel_access">
-            <view class="weui-panel__hd">订单核销</view>
+            <view class="weui-panel__hd">订单 - 233232323</view>
             <view class="weui-panel__bd">
               <view class="weui-cells weui-cells_after-title">
-                <view class="weui-cell weui-cell_input">
-                    <view class="weui-cell__hd">
-                        <view class="weui-label">订单号查询</view>
-                    </view>
-                    <view class="weui-cell__bd">
-                        <input class="weui-input" bindinput="onVerifyCodeInput" placeholder="请输入订单号后六位" type="number" confirm-type="go" maxlength="6" adjust-position="true"/>
-                    </view>
-                </view>
+                  <view class="weui-cell">
+                      <view class="weui-cell__bd">收货人</view>
+                      <view class="weui-cell__ft">阿里巴巴</view>
+                  </view>
+                  <view class="weui-cell">
+                      <view class="weui-cell__bd">电话</view>
+                      <view class="weui-cell__ft">13933223339</view>
+                  </view>
+                  <view class="weui-cell">
+                      <view class="weui-cell__bd">下单日期</view>
+                      <view class="weui-cell__ft">2018-03-03</view>
+                  </view>
+                  <view class="weui-cell">
+                      <view class="weui-cell__bd">数量</view>
+                      <view class="weui-cell__ft">6</view>
+                  </view>
+                  <view class="weui-cell">
+                      <view class="weui-cell__bd">状态</view>
+                      <view class="weui-cell__ft">未核销</view>
+                  </view>
+                  <view class="weui-cell">
+                      <input class="weui-input" placeholder="输入核销数量" maxlength="3"/>
+                  </view>
+                  <view class="weui-cell">
+                      <view class="weui-cell__bd"></view>
+                      <view class="weui-cell__ft">
+                          <button size="mini" class="weui-btn" type="primary">核销该订单</button>
+                      </view>
+                  </view>
+                  <view class="weui-cell">
+                      <view class="weui-cell__bd">确认核销该订单</view>
+                      <view class="weui-cell__ft">
+                          <button size="mini" class="weui-btn" type="warn">确认</button>
+                      </view>
+                  </view>
               </view>
             </view>
         </view>

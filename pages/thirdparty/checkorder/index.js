@@ -1,28 +1,38 @@
-// pages/check/check.js
+// pages/thirdparty/order/index.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    auth: false
+    orderList: [],
+    showResult: false
   },
 
-  onVerifyCodeInput: function(e){
+  onOrderNoInput: function(e){
     const input = e.detail.value;
-    if (input.length === 6){
-      this.setData({auth:true})
-      wx.navigateTo({
-        url:'../checkorder/index'
-      })
+    if (input === "666666") {
+      const demo = [
+        { id: 1, orderno: '121211666666', createon: '2018-01-03' },
+        { id: 2, orderno: '121211666666', createon: '2018-01-03' },
+        { id: 3, orderno: '121211666666', createon: '2018-01-03' }
+      ];
+      this.setData({
+        orderList: demo,
+        showResult: true
+      });
+    }
+    else if (input === "333333"){
+
+    }
+    else {
+      this.setData({
+        orderList: [],
+        showResult: false
+      });
     }
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-  
+
+    
   },
 
   /**

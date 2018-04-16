@@ -1,0 +1,19 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-cells__title">核销记录</view>
+        <view class="weui-cells weui-cells_after-title">
+            <navigator wx:for="{{records}}" wx:key="id" wx:for-item="item" url="" class="weui-cell">
+                <view class="weui-cell__bd">{{item.orderno}}</view>
+                <view class="weui-cell__ft">核销于：{{item.createon}}</view>
+            </navigator>
+            <navigator wx:for="{{records}}" wx:key="id" wx:for-item="item" url="" class="weui-cell">
+                <view class="weui-cell__bd">{{item.orderno}}</view>
+                <view class="weui-cell__ft">核销于：{{item.createon}}</view>
+            </navigator>
+            <navigator wx:for="{{records}}" wx:key="id" wx:for-item="item" url="" class="weui-cell">
+                <view class="weui-cell__bd">{{item.orderno}}</view>
+                <view class="weui-cell__ft">核销于：{{item.createon}}</view>
+            </navigator>
+        </view>
+    </view>
+</view>

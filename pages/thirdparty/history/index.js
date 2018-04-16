@@ -1,28 +1,22 @@
-// pages/check/check.js
+// pages/thirdparty/history/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    auth: false
-  },
-
-  onVerifyCodeInput: function(e){
-    const input = e.detail.value;
-    if (input.length === 6){
-      this.setData({auth:true})
-      wx.navigateTo({
-        url:'../checkorder/index'
-      })
-    }
+    records: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      records: [
+        { id: 1, orderno: '121211666666', createon: '2018-01-03' }
+      ]
+    })
   },
 
   /**

@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/thirdparty/order/index",
-    "pages/thirdparty/login/index"
- 
+    "pages/thirdparty/login/index",
+    "pages/thirdparty/history/index",
+    "pages/thirdparty/checkorder/index",
+    "pages/thirdparty/order/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
